@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'JTNFCAssosiation_Example' do
+  pod 'JTNFCAssosiation', :path => '../'
+
+  target 'JTNFCAssosiation_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
