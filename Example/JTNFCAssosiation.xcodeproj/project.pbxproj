@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		6B952237261C4DC5008042CA /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B952236261C4DC5008042CA /* ExternalAccessory.framework */; };
 		D6E8C3962EAFF5E5FC1B8CCD /* Pods_JTNFCAssosiation_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6F7F0089989A59D0CBFF64 /* Pods_JTNFCAssosiation_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C0EF025B98AA3802E55F8BD /* JTNFCAssosiation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JTNFCAssosiation.podspec; path = ../JTNFCAssosiation.podspec; sourceTree = "<group>"; };
+		2C0EF025B98AA3802E55F8BD /* JTNFCAssosiation.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JTNFCAssosiation.podspec; path = ../JTNFCAssosiation.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5E76808CF6AFB8859E982C50 /* Pods_JTNFCAssosiation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JTNFCAssosiation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* JTNFCAssosiation_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTNFCAssosiation_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,12 +41,14 @@
 		607FACE51AFB9204008FA782 /* JTNFCAssosiation_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTNFCAssosiation_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6E48B037DD89AD2AAA67AFF3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6B952235261C4DC5008042CA /* JTNFCAssosiation_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JTNFCAssosiation_Example.entitlements; sourceTree = "<group>"; };
+		6B952236261C4DC5008042CA /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		6E48B037DD89AD2AAA67AFF3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		726F8D829A5D89ADBEF2BECC /* Pods-JTNFCAssosiation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTNFCAssosiation_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JTNFCAssosiation_Tests/Pods-JTNFCAssosiation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF2EF00D42C32167BF6AACB4 /* Pods-JTNFCAssosiation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTNFCAssosiation_Example.debug.xcconfig"; path = "Target Support Files/Pods-JTNFCAssosiation_Example/Pods-JTNFCAssosiation_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C9FF333126F461449B7542D3 /* Pods-JTNFCAssosiation_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTNFCAssosiation_Example.release.xcconfig"; path = "Target Support Files/Pods-JTNFCAssosiation_Example/Pods-JTNFCAssosiation_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E21A7C8C00E790F79C854C74 /* Pods-JTNFCAssosiation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JTNFCAssosiation_Tests.release.xcconfig"; path = "Target Support Files/Pods-JTNFCAssosiation_Tests/Pods-JTNFCAssosiation_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		ED2FCA2086505AFB9F6CF582 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		ED2FCA2086505AFB9F6CF582 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FD6F7F0089989A59D0CBFF64 /* Pods_JTNFCAssosiation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JTNFCAssosiation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -54,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B952237261C4DC5008042CA /* ExternalAccessory.framework in Frameworks */,
 				56D81EEDCB4E4F194CAF77F7 /* Pods_JTNFCAssosiation_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +76,7 @@
 		306DFE149709A66FC8FCB339 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B952236261C4DC5008042CA /* ExternalAccessory.framework */,
 				5E76808CF6AFB8859E982C50 /* Pods_JTNFCAssosiation_Example.framework */,
 				FD6F7F0089989A59D0CBFF64 /* Pods_JTNFCAssosiation_Tests.framework */,
 			);
@@ -81,6 +86,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				6B952235261C4DC5008042CA /* JTNFCAssosiation_Example.entitlements */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for JTNFCAssosiation */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -156,7 +162,6 @@
 				726F8D829A5D89ADBEF2BECC /* Pods-JTNFCAssosiation_Tests.debug.xcconfig */,
 				E21A7C8C00E790F79C854C74 /* Pods-JTNFCAssosiation_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,7 +176,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				D8A77B53455BE4092AC006BD /* [CP] Embed Pods Frameworks */,
+				63B35114AE9801B8AE405AB5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +218,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = BKCQTZYQF2;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -227,6 +233,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -284,6 +291,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		63B35114AE9801B8AE405AB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JTNFCAssosiation_Example/Pods-JTNFCAssosiation_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JTNFCAssosiation/JTNFCAssosiation.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTNFCAssosiation.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JTNFCAssosiation_Example/Pods-JTNFCAssosiation_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BEBA85F60687B357E58B2086 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,24 +329,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D8A77B53455BE4092AC006BD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JTNFCAssosiation_Example/Pods-JTNFCAssosiation_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JTNFCAssosiation/JTNFCAssosiation.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTNFCAssosiation.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JTNFCAssosiation_Example/Pods-JTNFCAssosiation_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -419,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -478,10 +485,12 @@
 			baseConfigurationReference = AF2EF00D42C32167BF6AACB4 /* Pods-JTNFCAssosiation_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JTNFCAssosiation_Example.entitlements;
+				DEVELOPMENT_TEAM = BKCQTZYQF2;
 				INFOPLIST_FILE = JTNFCAssosiation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jtyh.nfc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -493,10 +502,12 @@
 			baseConfigurationReference = C9FF333126F461449B7542D3 /* Pods-JTNFCAssosiation_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JTNFCAssosiation_Example.entitlements;
+				DEVELOPMENT_TEAM = BKCQTZYQF2;
 				INFOPLIST_FILE = JTNFCAssosiation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jtyh.nfc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;

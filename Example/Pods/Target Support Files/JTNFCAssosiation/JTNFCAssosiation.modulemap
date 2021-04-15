@@ -1,0 +1,6 @@
+framework module JTNFCAssosiation {
+  umbrella header "JTNFCAssosiation-umbrella.h"
+
+  export *
+  module * { export * }
+}

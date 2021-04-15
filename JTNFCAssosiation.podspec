@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'JTNFCAssosiation'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of JTNFCAssosiation.'
+  s.summary          = '为精特系统所匹配的nfc读卡功能'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  仅支持DNEF数据格式的标签，读取功能最低要求iOS11，写入功能最低要求iOS13
                        DESC
 
   s.homepage         = 'https://github.com/OCdes/JTNFCAssosiation'
@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/OCdes/JTNFCAssosiation.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'JTNFCAssosiation/Classes/**/*'
   

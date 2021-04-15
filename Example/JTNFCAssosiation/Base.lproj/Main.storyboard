@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +19,125 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpv-69-9Dg">
+                                <rect key="frame" x="124" y="88" width="131" height="22"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="dfu-iT-M2K"/>
+                                    <constraint firstAttribute="height" constant="22" id="jOp-RL-9Z9"/>
+                                </constraints>
+                                <state key="normal" title="读取标签数据" image="info.circle" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="systemGray6Color"/>
+                                </state>
+                                <connections>
+                                    <action selector="readDataBtnClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LiP-eL-q9t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKv-Ls-FZ3">
+                                <rect key="frame" x="124" y="217" width="131" height="22"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="3ZT-eT-2hN"/>
+                                    <constraint firstAttribute="height" constant="22" id="PVl-D9-had"/>
+                                </constraints>
+                                <state key="normal" title="写入标签数据" image="pencil.circle" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="systemGray6Color"/>
+                                </state>
+                                <connections>
+                                    <action selector="writeDataBtnClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3O8-Gi-4Dz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXO-bx-4qf">
+                                <rect key="frame" x="115" y="272" width="149" height="22"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Lv3-W6-Jr7"/>
+                                </constraints>
+                                <state key="normal" title="写入数据并锁定" image="pencil.circle" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="systemGray6Color"/>
+                                </state>
+                                <connections>
+                                    <action selector="writeDataLockBtnClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4nE-eo-nAV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J30-J0-wqJ">
+                                <rect key="frame" x="106" y="153" width="167" height="22"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="C2T-ml-3fx"/>
+                                    <constraint firstAttribute="width" constant="167" id="Fbg-3M-hn2"/>
+                                </constraints>
+                                <state key="normal" title="自动读取标签数据" image="info.circle" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="systemGray6Color"/>
+                                </state>
+                                <connections>
+                                    <action selector="autoReadBtnClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nkN-I7-OhM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ag-nD-Y3p">
+                                <rect key="frame" x="28" y="355" width="322" height="162"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2Ag-nD-Y3p" secondAttribute="bottom" constant="150" id="6v7-Oj-9Uu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J30-J0-wqJ" secondAttribute="trailing" constant="86" id="98k-rU-ko2"/>
+                            <constraint firstItem="AXO-bx-4qf" firstAttribute="top" secondItem="zKv-Ls-FZ3" secondAttribute="bottom" constant="33" id="C07-wL-Yht"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AXO-bx-4qf" secondAttribute="trailing" constant="95" id="DVQ-MX-t4g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Ag-nD-Y3p" secondAttribute="trailing" constant="9" id="DxS-ru-wFr"/>
+                            <constraint firstItem="zKv-Ls-FZ3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="108" id="F0Z-Hy-NLK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zKv-Ls-FZ3" secondAttribute="trailing" constant="104" id="Jom-Jp-TK2"/>
+                            <constraint firstItem="J30-J0-wqJ" firstAttribute="top" secondItem="bpv-69-9Dg" secondAttribute="bottom" constant="43" id="P8l-YK-2nh"/>
+                            <constraint firstItem="bpv-69-9Dg" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="88" id="TT1-1P-qfA"/>
+                            <constraint firstItem="2Ag-nD-Y3p" firstAttribute="top" secondItem="AXO-bx-4qf" secondAttribute="bottom" constant="61" id="Tpo-mz-zLC"/>
+                            <constraint firstItem="2Ag-nD-Y3p" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="12" id="WUP-vT-j6D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bpv-69-9Dg" secondAttribute="trailing" constant="104" id="Wtg-tG-he0"/>
+                            <constraint firstItem="bpv-69-9Dg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="108" id="ZDM-fR-Zdy"/>
+                            <constraint firstItem="AXO-bx-4qf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="99" id="g3b-S4-TnY"/>
+                            <constraint firstItem="zKv-Ls-FZ3" firstAttribute="top" secondItem="J30-J0-wqJ" secondAttribute="bottom" constant="42" id="kO4-Q0-QC2"/>
+                            <constraint firstItem="J30-J0-wqJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="90" id="uw7-mC-idu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="autoReadBtn" destination="zKv-Ls-FZ3" id="Y3F-Op-Oaf"/>
+                        <outlet property="contentLal" destination="2Ag-nD-Y3p" id="gQq-IJ-7Ga"/>
+                        <outlet property="readBtn" destination="bpv-69-9Dg" id="Tcn-W6-zGO"/>
+                        <outlet property="writeAndLockBtn" destination="AXO-bx-4qf" id="sxF-eu-JUa"/>
+                        <outlet property="writeBtn" destination="zKv-Ls-FZ3" id="FP7-7R-QsD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-239.19999999999999" y="101.19940029985008"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="pencil.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

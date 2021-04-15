@@ -1,0 +1,16 @@
+PODS:
+  - JTNFCAssosiation (0.1.0)
+
+DEPENDENCIES:
+  - JTNFCAssosiation (from `../`)
+
+EXTERNAL SOURCES:
+  JTNFCAssosiation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JTNFCAssosiation: 95400b6f3581ce67645f07b9cd41322602709fd2
+
+PODFILE CHECKSUM: ab2d475167a750c725a84756805d861474e1413c
+
+COCOAPODS: 1.9.3

@@ -1,0 +1,22 @@
+{
+  "name": "JTNFCAssosiation",
+  "version": "0.1.0",
+  "summary": "为精特系统所匹配的nfc读卡功能",
+  "description": "仅支持DNEF数据格式的标签，读取功能最低要求iOS11，写入功能最低要求iOS13",
+  "homepage": "https://github.com/OCdes/JTNFCAssosiation",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "OCdes": "76515226@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/OCdes/JTNFCAssosiation.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "JTNFCAssosiation/Classes/**/*"
+}
